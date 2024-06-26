@@ -1,21 +1,21 @@
 ﻿using MediatR;
 
-namespace Centrix.Admin.Application.ServiceHealth.Get;
+namespace MyOrg.Admin.Application.ServiceHealth.Get;
 
-public class Handler : IRequestHandler<Query, Response>
+public class GetServiceHealthHandler : IRequestHandler<GetServiceHealthQuery, GetServiceHealthResponse>
 {
     private readonly IServiceHealthFetcher _serviceHealthFetcher;
 
-    public Handler(IServiceHealthFetcher serviceHealthFetcher)
+    public GetServiceHealthHandler(IServiceHealthFetcher serviceHealthFetcher)
     {
         _serviceHealthFetcher = serviceHealthFetcher;
     }
 
-    public async Task<Response> Handle(Query query, CancellationToken cancellationToken)
+    public async Task<GetServiceHealthResponse> Handle(GetServiceHealthQuery query, CancellationToken cancellationToken)
     {
         var health = await _serviceHealthFetcher.FetchServiceHealth(query.ServiceId);
 
-        return new Response()
+        return new GetServiceHealthResponse()
         {
             ServiceId = health.ServiceId,
             Status = health.Status,

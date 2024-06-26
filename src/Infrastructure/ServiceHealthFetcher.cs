@@ -1,7 +1,7 @@
-﻿using Centrix.Admin.Application.ServiceHealth;
-using Centrix.Admin.Domain;
+﻿using MyOrg.Admin.Application.ServiceHealth;
+using MyOrg.Admin.Domain;
 
-namespace Centrix.Admin.Infrastructure;
+namespace MyOrg.Admin.Infrastructure;
 
 public class ServiceHealthFetcher : IServiceHealthFetcher
 {

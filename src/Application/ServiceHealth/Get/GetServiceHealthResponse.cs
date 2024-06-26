@@ -1,8 +1,8 @@
-﻿using Centrix.Admin.Domain;
+﻿using MyOrg.Admin.Domain;
 
-namespace Centrix.Admin.Application.ServiceHealth.Get;
+namespace MyOrg.Admin.Application.ServiceHealth.Get;
 
-public class Response 
+public class GetServiceHealthResponse 
 {
   public Guid ServiceId { get; set; }
   public ServiceHealthStatus Status { get; set; }

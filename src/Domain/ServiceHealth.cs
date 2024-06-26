@@ -1,4 +1,4 @@
-﻿namespace Centrix.Admin.Domain;
+﻿namespace MyOrg.Admin.Domain;
 
 public class ServiceHealth
 {

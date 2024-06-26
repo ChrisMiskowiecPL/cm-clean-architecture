@@ -1,4 +1,4 @@
-namespace Centrix.Admin.Application.ServiceHealth;
+namespace MyOrg.Admin.Application.ServiceHealth;
 
 public interface IServiceHealthFetcher
 {
