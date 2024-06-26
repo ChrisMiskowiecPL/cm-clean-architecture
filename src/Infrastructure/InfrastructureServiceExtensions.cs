@@ -1,5 +1,5 @@
-using MyOrg.Admin.Application.ServiceHealth;
 using Microsoft.Extensions.DependencyInjection;
+using MyOrg.Admin.Domain;
 
 namespace MyOrg.Admin.Infrastructure;
 

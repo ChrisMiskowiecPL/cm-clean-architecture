@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using MyOrg.Admin.Domain;
 
 namespace MyOrg.Admin.Application.ServiceHealth.Get;
 
